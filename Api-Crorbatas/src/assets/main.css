@@ -23,5 +23,11 @@ html, body {
     background-size: auto;
     background-position: center;
     background-repeat: repeat;
+}
 
+@media screen and (max-width: 768px) {
+    html, body {
+        background-size: 45%;
+    }
+  
 }

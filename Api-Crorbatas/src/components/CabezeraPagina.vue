@@ -38,8 +38,7 @@
 	flex-direction: column;
 	align-items: center;
 	gap: 5px;
-	opacity: 0.8;
-
+	opacity: 0.7;
 }
 
 .personal {
@@ -53,6 +52,7 @@
 	padding: 20px;
 	filter: grayscale(100%);
 	border: 1px solid white;
+	background-color: black;
 }
 
 .texto {

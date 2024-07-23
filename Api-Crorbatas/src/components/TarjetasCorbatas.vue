@@ -7,9 +7,13 @@ defineProps(['items'])
 <template>
   <div class="container">
     <div class="tarjeta" v-for="item in items" :key="item.id">
-      <img :src="item.foto" alt="imagen de corbata" />
-      <h1>{{ item.nombre }}</h1>
-      <p>{{ item.descripcion }}</p>
+      <div class="img">
+        <img :src="item.foto" alt="imagen de corbata" />
+      </div>
+      <div class="texto">
+        <h1>{{ item.nombre }}</h1>
+        <p>{{ item.descripcion }}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -21,23 +25,41 @@ defineProps(['items'])
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  opacity: 0.8;
-
+  opacity: 0.9;
 }
+
 .tarjeta {
   width: 80%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   padding: 20px;
   color: black;
-  background-color: rgb(194, 194, 194);
+  background-color: rgb(92, 92, 92);
+}
+
+.img {
+  width: 15rem;
 }
 
 img {
-  width: 80px;
+  width: 15rem;
+}
+
+.texto{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+
 }
 </style>

@@ -1,13 +1,15 @@
 <script setup>
-import { ref } from 'vue'
 import { items } from '@/corbatas/data'
 import TarjetasCorbatas from '@/components/TarjetasCorbatas.vue'
+import CabezeraPagina from './components/CabezeraPagina.vue';
 
 </script>
 
 <template>
 
-<TarjetasCorbatas :items="items" />
+  <CabezeraPagina />
+
+  <TarjetasCorbatas class="corbatas" :items="items" />
 
 </template>
 

@@ -36,11 +36,11 @@ function toggleAmpliacion(index) { // Función para ampliar la imagen
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .tarjeta {
-  width: 80%;
+  width: 60%;
   transition: transform 0.5s ease;
   cursor: pointer;
   display: flex;
@@ -49,18 +49,18 @@ function toggleAmpliacion(index) { // Función para ampliar la imagen
   justify-content: space-evenly;
   align-items: center;
   gap: 10px;
-  padding: 20px;
+  padding: 10px;
   color: black;
-  background-color: rgb(92, 92, 92);
+  background-color: dimgray;
 }
 
 .img {
-  width: 15rem;
+  width: 10rem;
 }
 
 img {
-  width: 15rem;
-  transition: transform 0.5s ease; /* Añade transición suave */
+  width: 10rem;
+  transition: transform 0.5s ease; 
 }
 
 img.ampliada {

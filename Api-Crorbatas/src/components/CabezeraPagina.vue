@@ -42,6 +42,7 @@
 }
 
 .personal {
+	min-width: 25%;
 	width: 25%;
 	display: flex;
 	flex-direction: row;
@@ -74,5 +75,20 @@
 	text-align: center;
 	text-decoration: underline 1px solid white;
 	font-size: 2.5rem;
+}
+
+@media (max-width: 900px) {
+    .personal {
+        width: 40%; /* Establece el ancho de la imagen a 40% del ancho de la ventana */
+    }
+
+		.texto {
+				width: 60%; /* Establece el ancho del texto a 80% del ancho de la ventana */
+				background-color: rgb(78, 78, 78);
+				opacity: 1;
+		}
+		.container {
+			opacity: 0.8;
+		}
 }
 </style>

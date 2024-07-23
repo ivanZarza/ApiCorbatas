@@ -1,14 +1,24 @@
 <script setup>
+import { ref } from 'vue';
 
-defineProps(['items'])
+defineProps({
+  items: Array,
+})
 
+const indexAmpliado = ref(null) // Variable reactiva para guardar el índice de la imagen ampliada
+
+
+function toggleAmpliacion(index) { // Función para ampliar la imagen
+  indexAmpliado.value = indexAmpliado.value === index ? null : index // Si el índice es el mismo, lo pone a null, si no, lo pone al índice  
+}
 </script>
 
 <template>
   <div class="container">
-    <div class="tarjeta" v-for="item in items" :key="item.id">
+    <div v-for="item in items" :key="item.id"class="tarjeta" 
+    >
       <div class="img">
-        <img :src="item.foto" alt="imagen de corbata" />
+        <img :src="item.foto" alt="Foto de corbata" @click="toggleAmpliacion(item.id)" :class="{ ampliada: indexAmpliado === item.id }" /> <!--  Añade la clase ampliada si el índice es el mismo -->
       </div>
       <div class="texto">
         <h1>{{ item.nombre }}</h1>
@@ -21,6 +31,7 @@ defineProps(['items'])
 <style scoped>
 .container {
   width: 80;
+  margin-top: 13px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,6 +41,8 @@ defineProps(['items'])
 
 .tarjeta {
   width: 80%;
+  transition: transform 0.5s ease;
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -47,9 +60,14 @@ defineProps(['items'])
 
 img {
   width: 15rem;
+  transition: transform 0.5s ease; /* Añade transición suave */
 }
 
-.texto{
+img.ampliada {
+  transform: scale(3); 
+}
+
+.texto {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -60,6 +78,5 @@ img {
   padding: 20px;
   color: rgb(255, 255, 255);
   font-size: 1.1rem;
-
 }
 </style>

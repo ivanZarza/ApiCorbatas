@@ -77,18 +77,29 @@
 	font-size: 2.5rem;
 }
 
-@media (max-width: 900px) {
-    .personal {
-        width: 40%; /* Establece el ancho de la imagen a 40% del ancho de la ventana */
-    }
+@media (max-width: 1580px) {
 
-		.texto {
-				width: 60%; /* Establece el ancho del texto a 80% del ancho de la ventana */
-				background-color: rgb(78, 78, 78);
-				opacity: 1;
-		}
-		.container {
-			opacity: 0.8;
-		}
+	.texto {
+		width: 60%;
+		background-color: rgb(0, 0, 0);
+		opacity: 1;
+		font-size: 1.2rem;
+	}
+
+	.container {
+		opacity: 0.8;
+	}
 }
+
+@media (max-width: 900px) {
+	.personal {
+		width: 40%;
+		margin-bottom: 40px;
+	}
+}
+
+	.text-center {
+		font-size: 1.5rem;
+	}
+
 </style>

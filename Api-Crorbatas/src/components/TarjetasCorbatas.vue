@@ -35,6 +35,7 @@ function toggleAmpliacion(index) { // Función para ampliar la imagen
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 20px;
   opacity: 0.95;
 }
@@ -51,7 +52,8 @@ function toggleAmpliacion(index) { // Función para ampliar la imagen
   gap: 10px;
   padding: 10px;
   color: black;
-  background-color: dimgray;
+  background-color: rgb(26, 26, 26);
+  box-shadow: 10 10 3px rgba(170, 170, 170, 0.5);
 }
 
 .img {
@@ -78,5 +80,14 @@ img.ampliada {
   padding: 20px;
   color: rgb(255, 255, 255);
   font-size: 1.1rem;
+}
+
+@media (max-width: 900px) {
+
+  .tarjeta{
+    width: 50%;
+    text-align: center;
+  }
+
 }
 </style>

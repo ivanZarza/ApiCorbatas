@@ -1,7 +1,8 @@
 <script setup>
 import { items } from '@/corbatas/data'
-import TarjetasCorbatas from '@/components/TarjetasCorbatas.vue'
-import CabezeraPagina from './components/CabezeraPagina.vue';
+import TarjetasCorbatas from './componentes/TarjetasCorbatas.vue';
+import CabezeraPagina from '@/componentes/CabezeraPagina.vue';
+import PiePagina from '@/componentes/PiePagina.vue';
 
 </script>
 
@@ -9,7 +10,9 @@ import CabezeraPagina from './components/CabezeraPagina.vue';
 
   <CabezeraPagina />
 
-  <TarjetasCorbatas class="corbatas" :items="items" />
+  <TarjetasCorbatas class="corbatas" :items="items"/>
+
+  <PiePagina />
 
 </template>
 

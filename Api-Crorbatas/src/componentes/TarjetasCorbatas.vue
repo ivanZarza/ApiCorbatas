@@ -23,6 +23,7 @@ function toggleAmpliacion(index) { // Función para ampliar la imagen
       <div class="texto">
         <h1>{{ item.nombre }}</h1>
         <p>{{ item.descripcion }}</p>
+        <p>{{ item.precio }}</p>
       </div>
     </div>
   </div>

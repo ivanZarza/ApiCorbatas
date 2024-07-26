@@ -18,7 +18,6 @@
 
 <style scoped>
 .footer {
-
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -28,7 +27,6 @@
   font-size: 1.2rem;
   margin: 20px;
   padding-bottom: 200px;
-
   
 }
 

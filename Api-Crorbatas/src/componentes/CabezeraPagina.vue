@@ -39,6 +39,7 @@
 	align-items: center;
 	gap: 5px;
 	opacity: 0.7;
+	margin: 20px;
 }
 
 .personal {

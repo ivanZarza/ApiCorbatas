@@ -51,7 +51,7 @@
 	align-items: center;
 	gap: 20px;
 	padding: 20px;
-	filter: grayscale(100%);
+/* 	filter: grayscale(100%); */
 	border: 1px solid white;
 	background-color: black;
 }

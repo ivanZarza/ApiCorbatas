@@ -15,8 +15,7 @@ function toggleAmpliacion(index) { // Función para ampliar la imagen
 
 <template>
   <div class="container">
-    <div v-for="item in items" :key="item.id"class="tarjeta" 
-    >
+    <div v-for="item in items" :key="item.id"class="tarjeta" >
       <div class="img">
         <img :src="item.foto" alt="Foto de corbata" @click="toggleAmpliacion(item.id)" :class="{ ampliada: indexAmpliado === item.id }" /> <!--  Añade la clase ampliada si el índice es el mismo -->
       </div>
@@ -25,6 +24,9 @@ function toggleAmpliacion(index) { // Función para ampliar la imagen
         <p>{{ item.descripcion }}</p>
         <p>{{ item.precio }}</p>
       </div>
+    </div>
+    <div class="pañuelo"> 
+      <p>Todas las corbatas podran llevar pañuelo a juego bajo previo encargo</p>
     </div>
   </div>
 </template>
@@ -85,10 +87,31 @@ img.ampliada {
 
 @media (max-width: 900px) {
 
-  .tarjeta{
-    width: 50%;
-    text-align: center;
+  .container {
+    width: 100%;
   }
 
+  .tarjeta {
+    width: 50%;
+    text-align: center;
+    font-size: 0.5rem;
+  }
+
+
+}
+
+.pañuelo {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+  background-color: rgb(26, 26, 26);
+  box-shadow: 10 10 3px rgba(170, 170, 170, 0.5);
 }
 </style>

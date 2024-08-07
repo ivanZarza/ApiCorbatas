@@ -63,7 +63,7 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	gap: 20px;
 	padding: 20px;
@@ -88,6 +88,7 @@
 		font-size: 1.2rem;
 	}
 
+
 	.container {
 		opacity: 0.8;
 	}
@@ -109,17 +110,19 @@
 		width: 100%;
 	}
 
+
+	.texto {
+	
+	width: 90%;
+	font-size: 1rem;
+	margin-bottom: 40px;
+}	
+
 	.personal {
 		width: 80%;
 		margin-bottom: 40px;
 	}
 }
 
-	.texto {
-	
-		width: 90%;
-		font-size: 1rem;
-		margin-bottom: 40px;
-	}	
 
 </style>

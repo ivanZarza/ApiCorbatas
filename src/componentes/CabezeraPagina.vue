@@ -37,6 +37,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	gap: 5px;
 	opacity: 0.7;
 	margin: 20px;

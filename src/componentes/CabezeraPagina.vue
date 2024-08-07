@@ -103,4 +103,22 @@
 		font-size: 1.5rem;
 	}
 
+	@media (max-width: 750px) {
+	.container {
+		width: 100%;
+	}
+
+	.personal {
+		width: 80%;
+		margin-bottom: 40px;
+	}
+}
+
+	.texto {
+	
+		width: 90%;
+		font-size: 1rem;
+		margin-bottom: 40px;
+	}	
+
 </style>

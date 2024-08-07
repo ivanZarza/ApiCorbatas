@@ -8,7 +8,7 @@ export const items = [
 	},
 	{
 		id: 2,
-		nombre: "Maesttre",
+		nombre: "Maestre",
 		descripcion: "Descripción del Item 2 que se mostrará en la página de detalle del producto seleccionado por el usuario.",
 		foto: "./Maesttre.JPG",
 		precio: "25 Euros"

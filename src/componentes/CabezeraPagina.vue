@@ -112,9 +112,8 @@
 
 
 	.texto {
-	
 	width: 90%;
-	font-size: 1rem;
+	font-size: 0.8rem;
 	margin-bottom: 40px;
 }	
 

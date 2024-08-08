@@ -90,6 +90,10 @@ img.ampliada {
 
   .container {
     width: 100%;
+  } 
+
+  .container {
+    width: 100%;
   }
 
   .tarjeta {
@@ -112,7 +116,7 @@ img.ampliada {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 10px;
+    padding: 5px;
     gap: 10px;
   }
 
@@ -123,14 +127,41 @@ img.ampliada {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    padding: 9px;
+    gap: 5px;
+    padding: 7px;
     color: rgb(255, 255, 255);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin: none;
   }
 }
 
+@media screen and (max-width: 600px) {
+  .tarjeta {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    gap: 10px;
+  }
+
+  .texto {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 7px;
+    color: rgb(255, 255, 255);
+    font-size: 0.7rem;
+    margin: none;
+  }
+  
+}
 .pañuelo {
   width: 60%;
   display: flex;
